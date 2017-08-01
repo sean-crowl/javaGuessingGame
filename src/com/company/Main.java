@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    private int guessedNumber;
-
     public static void main(String[] args) {
 	// write your code here
         Main main = new Main();
@@ -13,6 +11,7 @@ public class Main {
     }
 
     private void startGame() {
+        int guessedNumber = 0;
         int guessesRemaining = 0;
         int randomNumber = (int) Math.ceil(Math.random() * 10);
 
